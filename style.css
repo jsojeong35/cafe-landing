@@ -287,6 +287,28 @@ section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
   font-size: 0.85rem;
 }
 
+/* Diagrams */
+.diagram-block {
+  margin-top: 56px;
+}
+.diagram-frame {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px clamp(16px, 4vw, 40px);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+.diagram-frame svg { display: block; width: 100%; height: auto; margin: 0 auto; min-width: 560px; max-width: 900px; }
+.diagram-caption {
+  margin: 14px 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--brown-500);
+}
+.guide { background: var(--paper); }
+.guide .diagram-frame { background: var(--cream); }
+
 /* Footer */
 .footer {
   background: var(--brown-900);
